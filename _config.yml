@@ -144,17 +144,17 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections:
-  # news:
-  #   defaults:
-  #     layout: post
-  #   output: true
-  #   permalink: /:collection/:title/
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /:collection/:title/
   projects:
     output: true
     permalink: /:collection/:title/
 
 announcements:
-  enabled: false
+  enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
@@ -184,7 +184,6 @@ kramdown:
 include: ["_pages", "_scripts"]
 exclude:
   -_news
-  -_includes/news.liquid
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
